@@ -7,19 +7,18 @@ const keys = {
   u: "ufat",
 };
 
-const encrip = (str, ed) => {
-  //Quitando espacios
-  let strTrim = str.replace(/\s/g, "");
+const encrip = (strTrim, ed) => {
   //Recorriendo las llaves
   Object.entries(keys).forEach((entry) => {
     const [key, value] = entry;
-    //Remplazando llave o valor
+    //Remplazando llave o valor segun sea el caso
     strTrim = strTrim.replace(
       new RegExp(ed ? key : value, "g"),
       ed ? value : key
     );
   });
-  return strTrim;
+  //Retornando el texto encriptado(sin espacios) o desencriptado(con espacios)
+  return ed ? strTrim.replace(/\s/g, "") : strTrim;
 };
 
 //Obteniendo los elementos del DOM
@@ -42,7 +41,6 @@ const elements = {
 form.addEventListener("submit", (event) => {
   //Desactivando el envio del formulario
   event.preventDefault();
-  console.log(event.submitter.id);
 });
 
 btnC.addEventListener("click", async () => {
