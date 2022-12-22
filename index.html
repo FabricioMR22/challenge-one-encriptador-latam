@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/Vector.svg" />
+    <title>Challenge ONE | Encriptador de texto</title>
+  </head>
+  <body>
+    <form id="form">
+      <div class="container">
+        <div class="box">
+          <textarea type="text" id="txtinput" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+          <br>
+          <i class="fas fa-exclamation-circle" id="circle"></i>
+          <label for="name" id="label">Solo letras minúsculas y sin acentos</label>
+          <br>
+          <button id="btnE" type="submit">Encriptar</button>
+          <button id="btnD" type="submit">Desencriptar</button>
+        </div>
+        
+        <div class="box">
+          <textarea name="txtoutput" id="txtoutput" cols="30" rows="10"></textarea>
+          <button id="btnC">Copiar</button>
+        </div>
+      </div>
+    </form>
+  <script src="index.js"></script>
+    
+</html>
