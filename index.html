@@ -10,24 +10,32 @@
     <title>Challenge ONE | Encriptador de texto</title>
   </head>
   <body>
+    <header>
+          <img src="images/Vector.svg" alt="logo" />
+    </header>
     <form id="form">
-      <div class="container">
-        <div class="box">
-          <textarea type="text" id="txtinput" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
-          <br>
+        
+        <textarea type="text" id="txtinput" placeholder="Ingrese el texto aqui" autofocus></textarea>
+        
+        <textarea name="txtoutput" id="txtoutput" cols="30" rows="10" readonly></textarea>
+        <img class="imgmu" src="images/Muñeco.svg" alt="">
+        <div class="msje">
+          <label for="msj" id="msj">Ningún mensaje fue encontrado</label>
+          <label for="dato" id="dato">Ingresa el texto que desees encriptar o desencriptar.</label>
+        </div>
+        <button id="btnC">Copiar</button>
+        
+        <div class="alerta">
           <i class="fas fa-exclamation-circle" id="circle"></i>
           <label for="name" id="label">Solo letras minúsculas y sin acentos</label>
-          <br>
+        </div>
+        <div class="botones">
           <button id="btnE" type="submit">Encriptar</button>
           <button id="btnD" type="submit">Desencriptar</button>
         </div>
-        
-        <div class="box">
-          <textarea name="txtoutput" id="txtoutput" cols="30" rows="10"></textarea>
-          <button id="btnC">Copiar</button>
-        </div>
-      </div>
+      
     </form>
+
   <script src="index.js"></script>
     
 </html>
