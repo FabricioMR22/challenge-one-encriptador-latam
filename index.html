@@ -17,13 +17,19 @@
         
         <textarea type="text" id="txtinput" placeholder="Ingrese el texto aqui" autofocus></textarea>
         
-        <textarea name="txtoutput" id="txtoutput" cols="30" rows="10" readonly></textarea>
-        <img class="imgmu" src="images/Muñeco.svg" alt="">
-        <div class="msje">
-          <label for="msj" id="msj">Ningún mensaje fue encontrado</label>
-          <label for="dato" id="dato">Ingresa el texto que desees encriptar o desencriptar.</label>
+        <div class="txtoutput">
+          <textarea type="text" id="txtoutput" ></textarea>
+          <img src="images/Muñeco.svg" alt="" id="munheco">
+
+          <div class="bloque-msj">
+            <label for="msj" id="msj">Ningún mensaje fue encontrado</label>
+            <label for="dato" id="dato">Ingresa el texto que desees encriptar o desencriptar.</label>
+          </div>
+          <button id="btnC">Copiar</button>
         </div>
-        <button id="btnC">Copiar</button>
+        
+
+        
         
         <div class="alerta">
           <i class="fas fa-exclamation-circle" id="circle"></i>

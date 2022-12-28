@@ -37,6 +37,18 @@ const elements = {
     circle,
   },
 };
+//Funcion para limpiar el mensaje
+const limpiar = () => {
+  if (txtinput.value === "") {
+    msj.style.display = "block";
+    dato.style.display = "block";
+    munheco.style.display = "block";
+  } else {
+    msj.style.display = "none";
+    dato.style.display = "none";
+    munheco.style.display = "none";
+  }
+};
 
 form.addEventListener("submit", (event) => {
   //Desactivando el envio del formulario
@@ -46,6 +58,7 @@ form.addEventListener("submit", (event) => {
 btnC.addEventListener("click", async () => {
   //Copiando el texto
   await navigator.clipboard.writeText(elements.form.txtoutput.value);
+  txtoutput.value = "";
 });
 
 btnE.addEventListener("click", () => {
@@ -77,3 +90,12 @@ const validator = () => {
   //Respuesta de validacion
   return valid.test(entrada);
 };
+
+//Seleccionando el texto al hacer focus
+txtinput.addEventListener("focus", function () {
+  this.select();
+});
+
+txtinput.addEventListener("keyup", function () {
+  limpiar();
+});
