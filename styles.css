@@ -10,19 +10,14 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    scale: 0.97;
 }
 
 .logo{
     align-self: flex-start;
     margin-top: 2.8%;
 }
-.div1{
-    background: rgba(0, 208, 255, 0.274);
-}
 
-.div2{
-    background: rgba(255, 0, 0, 0.377);
-}
 
 textarea,label,button{
     font-family: 'Arial';
@@ -32,7 +27,7 @@ textarea,label,button{
 }
 
 textarea{
-    font-size: 32px;
+    font-size: 2rem;
 
     color: #0A3871;
     outline: none;
@@ -62,7 +57,7 @@ textarea::placeholder {
 }
 
 .alerta{
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #495057;
     opacity: 0.8
 }
@@ -81,7 +76,7 @@ textarea::placeholder {
     transition: 0.3s all;
     cursor: pointer;
 
-    font-size: 16px;
+    font-size: 1.33rem;
     line-height: 19px;
     border-radius: 24px;
 }
@@ -127,7 +122,7 @@ textarea::placeholder {
     height: 781px;
     margin-bottom: 32px;
     
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #495057;
 }
 
@@ -135,14 +130,14 @@ textarea::placeholder {
     margin-top: 16px;
     margin-bottom: 16px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
     color: #343A40;
 }
 
 #dato{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.33rem;
     color: #495057; 
 }
 
@@ -154,7 +149,7 @@ textarea::placeholder {
     border-radius: 24px;
     background-color: white;
 
-    font-size: 16px;
+    font-size: 1.33rem;
     line-height: 19px;
     text-align: center;
 
