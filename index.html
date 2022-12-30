@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="images/Vector.svg" />
     <title>Challenge ONE | Encriptador de texto</title>
   </head>
   <body>
     <header>
-          <img src="images/Vector.svg" alt="logo" />
     </header>
-    <form id="form">
-        
-        <textarea type="text" id="txtinput" placeholder="Ingrese el texto aqui" autofocus></textarea>
-        
-        <div class="txtoutput">
-          <textarea type="text" id="txtoutput" ></textarea>
-          <img src="images/Muñeco.svg" alt="" id="munheco">
-
-          <div class="bloque-msj">
-            <label for="msj" id="msj">Ningún mensaje fue encontrado</label>
-            <label for="dato" id="dato">Ingresa el texto que desees encriptar o desencriptar.</label>
+    <main>
+      <form id="form">
+        <div class="container">
+          <div class="logo">
+            <img src="images/Vector.svg" width="120px" height="48px" alt="">
           </div>
-          <button id="btnC">Copiar</button>
-        </div>
-        
+          
+          <div class="div1">
+            <div class="bloque-izquierdo">
+              <textarea type="text" id="txtinput" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            
+              <div class="alerta">
+                <i class="fas fa-exclamation-circle" id="circle"></i>
+                <label for="name" id="label">Solo letras minúsculas y sin acentos</label>
+              </div>
 
-        
-        
-        <div class="alerta">
-          <i class="fas fa-exclamation-circle" id="circle"></i>
-          <label for="name" id="label">Solo letras minúsculas y sin acentos</label>
+              <div class="botones">
+                <button id="btnE" type="submit">Encriptar</button><button id="btnD" type="submit">Desencriptar</button>
+              </div>
+            </div>
+                
+          </div>
+          
+          <div class="div2">
+            <div class="bloque-derecho">
+              <textarea type="text" id="txtoutput" ></textarea>
+              <img src="images/Muñeco.svg" alt="" id="munheco">
+              <label for="msj" id="msj">Ningún mensaje fue encontrado</label>
+              <label for="dato" id="dato">Ingresa el texto que desees encriptar o desencriptar.</label>
+              <button id="btnC">Copiar</button>
+            </div>
+          </div>
+          
         </div>
-        <div class="botones">
-          <button id="btnE" type="submit">Encriptar</button>
-          <button id="btnD" type="submit">Desencriptar</button>
-        </div>
+          
+        
       
     </form>
+    </main>
+    <footer>
+
+    </footer>
 
   <script src="index.js"></script>
     

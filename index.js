@@ -43,13 +43,18 @@ const limpiar = () => {
     msj.style.display = "block";
     dato.style.display = "block";
     munheco.style.display = "block";
+    txtoutput.style.display = "none";
+    btnC.style.display = "none";
   } else {
     msj.style.display = "none";
     dato.style.display = "none";
     munheco.style.display = "none";
+    txtoutput.style.display = "block";
+    btnC.style.display = "block";
   }
 };
 
+limpiar();
 form.addEventListener("submit", (event) => {
   //Desactivando el envio del formulario
   event.preventDefault();
